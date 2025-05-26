@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
@@ -20,8 +20,8 @@ const Navbar = () => {
 
     const ref = React.useRef(null)
 
-    const [isScrolled, setIsScrolled] = React.useState(false);
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const { openSignIn } = useClerk();
     const { user } = useUser();
@@ -29,8 +29,18 @@ const Navbar = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
+    useEffect(() => {
+        if (location.pathname !== '/') {
+            setIsScrolled(true);
+            return;
+        }
+        else {
+            setIsScrolled(false);
+        }
+        setIsScrolled(prev => location.pathname !== '/' ? true : prev);
+    })
 
-    React.useEffect(() => {
+    useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 10);
         };
