@@ -32,13 +32,10 @@ const Navbar = () => {
     useEffect(() => {
         if (location.pathname !== '/') {
             setIsScrolled(true);
-            return;
-        }
-        else {
+        } else {
             setIsScrolled(false);
         }
-        setIsScrolled(prev => location.pathname !== '/' ? true : prev);
-    })
+    }, [location.pathname]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -49,10 +46,10 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 ${isScrolled ? "bg-white/80 shadow-md text-black-700 backdrop-blur-lg py-3 md:py-4" : "py-4 md:py-6"}`}>
+        <nav className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 ${isScrolled ? "bg-white/50 shadow-lg text-black-700 backdrop-blur-xl py-3 md:py-4" : "py-4 md:py-6"}`}>
 
             {/* Logo */}
-            <Link to="/">
+            <Link to="/" className="flex items-center gap-2">
                 <img src={assets.logo} alt="logo" className={`h-9 ${isScrolled && "invert opacity-80"}`} />
             </Link>
 
