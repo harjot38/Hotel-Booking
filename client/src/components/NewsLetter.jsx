@@ -18,7 +18,7 @@ const NewsLetter = () => {
                         <form class="mt-8 flex">
                             <input type="email" placeholder="Your email address"
                                 class="w-full outline-none rounded-l-md border border-r-0 border-gray-300 p-4 text-gray-900" />
-                            <button type="submit" class="rounded-r-md bg-black px-7 py-2 text-white">
+                            <button type="submit" class="rounded-r-md bg-black hover:bg-gray-700 px-7 py-2 text-white cursor-pointer transition-colors duration-300 ease-in-out">
                                 Submit
                             </button>
                         </form>
