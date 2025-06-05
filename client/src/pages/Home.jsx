@@ -15,9 +15,6 @@ const Home = () => {
 
             <Testimonial />
             <NewsLetter />
-
-            {/* <Footer /> */}
-            
         </>
     )
 }
