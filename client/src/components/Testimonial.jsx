@@ -9,7 +9,7 @@ const Testimonial = () => {
                 subTitle="Discover why discerning travelers consistently chose QuickStay for their exclusive and luxurious accmodations around the world."
             />
             <div class="flex md:flex-row flex-col gap-5 mt-10 items-center justify-center">
-                <div class="w-80 flex flex-col items-center border border-gray-300 p-10 rounded-lg">
+                <div class="w-80 flex flex-col items-center border border-gray-300 p-10 rounded-lg cursor-pointer transition-colors ease-in-out duration-300 active:scale-95 hover:bg-gray-200">
                     <img class="h-20 w-20 rounded-full" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200" alt="userImage1" />
                         <h2 class="text-lg text-gray-900 font-medium mt-2">Donald Jackman</h2>
                         <p class="text-sm text-gray-500">Barcelona, Spain</p>
@@ -33,7 +33,7 @@ const Testimonial = () => {
                         <p class="text-center text-[15px] mt-3 text-gray-500">I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay provides.</p>
                 </div>
 
-                <div class="w-80 flex flex-col items-center border border-gray-300 p-10 rounded-lg">
+                <div class="w-80 flex flex-col items-center border border-gray-300 p-10 rounded-lg cursor-pointer transition-colors ease-in-out duration-300 active:scale-95 hover:bg-gray-200">
                     <img class="h-20 w-20 rounded-full" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200" alt="userImage2" />
                         <h2 class="text-lg text-gray-900 font-medium mt-2">Richard Nelson</h2>
                         <p class="text-sm text-gray-500">New York, USA</p>
@@ -57,7 +57,7 @@ const Testimonial = () => {
                         <p class="text-center text-[15px] mt-3 text-gray-500">QuickStay exceeded my expectations. The booking process was seamless, and the hotels were absolutely top-notch. Highly recommended!</p>
                 </div>
 
-                <div class="w-80 flex flex-col items-center border border-gray-300 p-10 rounded-lg">
+                <div class="w-80 flex flex-col items-center border border-gray-300 p-10 rounded-lg cursor-pointer transition-colors ease-in-out duration-300 active:scale-95 hover:bg-gray-200">
                     <img class="h-20 w-20 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop" alt="userImage3"/>
                         <h2 class="text-lg text-gray-900 font-medium mt-2">Sophia Washington</h2>
                         <p class="text-sm text-gray-500">Seoul, South Korea</p>

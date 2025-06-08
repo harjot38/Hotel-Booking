@@ -39,11 +39,15 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 10);
+            const scrollTop = window.scrollY;
+            // Set isScrolled to true only if scrollTop > 10
+            setIsScrolled(scrollTop > 10 || location.pathname !== '/');
         };
+
+        handleScroll(); // run once on mount to check current scroll position
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, [location.pathname]);
 
     return (
         <nav className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 ${isScrolled ? "bg-white/50 shadow-lg text-black-700 backdrop-blur-xl py-3 md:py-4" : "py-4 md:py-6"}`}>
