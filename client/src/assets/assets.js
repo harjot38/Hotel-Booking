@@ -38,6 +38,7 @@ import uploadArea from "./uploadArea.svg";
 import totalBookingIcon from "./totalBookingIcon.svg";
 import totalRevenueIcon from "./totalRevenueIcon.svg";
 import subscribe from './subscribe.png'
+import jeju from './jejuIsland.png'
 
 export const assets = {
     logo,
@@ -73,13 +74,17 @@ export const assets = {
     totalBookingIcon,
     totalRevenueIcon,
     subscribe,
+    jeju
 }
 
 export const cities = [
+    "Mumbai",
     "Seoul",
+    "Tokyo",
     "Dubai",
     "Singapore",
     "New York",
+    "London",
 ];
 
 // Exclusive Offers Dummy Data
