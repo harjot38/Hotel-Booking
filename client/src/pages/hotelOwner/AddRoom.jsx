@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const AddRoom = () => {
+
+  const [images, setImages] = useState();
+
   return (
-    <div>AddRoom</div>
+    <div>
+
+    </div>
   )
 }
 
