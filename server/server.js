@@ -1,0 +1,11 @@
+import express from "express"
+import "dotenv/config"
+import cors from "cors"
+
+const app = express()
+// Enable Cross-Origin Resource Sharing
+app.use(cors())
+
+app.get('/', (req, res) => res.send("API is working"))
+
+const PORT = process.env.PORT || 3000;
